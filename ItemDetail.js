@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const FunctionalComponent = () {
+const ItemDetail = (props) => {
 	return (
 		<View>
-			<Text>My List!!!</Text>
+			<Text>{props.item.title}</Text>
 		</View>	
 	);
 };
 
-export default FunctionalComponent;
+export default ItemDetail;
