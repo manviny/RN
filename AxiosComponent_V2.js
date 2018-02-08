@@ -1,6 +1,6 @@
 // this version call a function component ( ItemDetail ) to render part of it 
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import ItemDetail from './ItemDetail';
 
@@ -24,9 +24,9 @@ class AxiosComponent extends Component {
 
 	render() {	
 		return (
-			<View>
+			<ScrollView>
 				{this.renderList()}
-			</View>	
+			</ScrollView>	
 		);
 	}
 }

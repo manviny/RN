@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const FunctionalComponent = () {
+const FunctionalComponent = () => {
 	return (
 		<View>
 			<Text>My List!!!</Text>
