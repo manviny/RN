@@ -34,11 +34,14 @@ npm install --save axios
 
 ## Expo - React Native Authentication with Expo, AWS Amplify, & Cognito
 * [Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=5uPNmq8TUoA)
-0- npm i -g awsmobile-cli
-1- create-react-native-app RNExpoAuthProject
-2- cd RNExpoAuthProject
-3- awsmobile configure
-4- awsmobile init
-5- ? Where is your project's source directory:  .
-
+```bash
+npm i -g awsmobile-cli
+create-react-native-app RNExpoAuthProject
+cd RNExpoAuthProject
+awsmobile configure
+awsmobile init
+? Where is your project's source directory:  .
+awsmobile user-signin enable
+awsmobile push
+```
 
