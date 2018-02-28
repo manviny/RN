@@ -27,4 +27,4 @@ export default class App extends React.Component {
 
 
 ##Enlaces interesantes
-(A declarative library for application development using cloud services with JavaScript)[https://github.com/aws/aws-amplify]
+[A declarative library for application development using cloud services with JavaScript](https://github.com/aws/aws-amplify)
