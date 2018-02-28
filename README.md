@@ -33,7 +33,9 @@ npm install --save axios
 * yarn run android
 
 ## Expo - React Native Authentication with Expo, AWS Amplify, & Cognito
-* [Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=5uPNmq8TUoA)
+* [32 min Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=5uPNmq8TUoA)
+* [14 min Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=dhOk7aNIzKw)
+
 ```bash
 npm i -g awsmobile-cli
 create-react-native-app RNExpoAuthProject
