@@ -18,3 +18,4 @@ npm install --save axios
 
 * [A declarative library for application development using cloud services with JavaScript. The default implementation works with Amazon Web Services (AWS) resources](https://github.com/aws/aws-amplify)
 * [AWS Mobile React Native Starter App](https://github.com/awslabs/aws-mobile-react-native-starter)
+* [Mobile Hub](https://www.youtube.com/watch?v=VoRFXHHzHMw)
