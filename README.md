@@ -6,6 +6,8 @@
 * npm start
 * //Start Android emulator//
 * react-native run-android
+* yarn run android
+
 
 
 
@@ -19,3 +21,10 @@ npm install --save axios
 * [A declarative library for application development using cloud services with JavaScript. The default implementation works with Amazon Web Services (AWS) resources](https://github.com/aws/aws-amplify)
 * [AWS Mobile React Native Starter App](https://github.com/awslabs/aws-mobile-react-native-starter)
 * [Mobile Hub](https://www.youtube.com/watch?v=VoRFXHHzHMw)
+
+
+## Mobile Hub Sign-in
+* yarn add aws-amplify-react-native
+* ( npm run eject )
+* react-native link amazon-cognito-identity-js
+* yarn run android
