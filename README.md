@@ -43,5 +43,6 @@ awsmobile init
 ? Where is your project's source directory:  .
 awsmobile user-signin enable
 awsmobile push
+yarn / npm install
 ```
 
