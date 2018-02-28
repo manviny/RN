@@ -23,8 +23,22 @@ npm install --save axios
 * [Mobile Hub](https://www.youtube.com/watch?v=VoRFXHHzHMw)
 
 
+
+
+
 ## Mobile Hub Sign-in
 * yarn add aws-amplify-react-native
 * ( npm run eject )
 * react-native link amazon-cognito-identity-js
 * yarn run android
+
+## Expo - React Native Authentication with Expo, AWS Amplify, & Cognito
+* [Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=5uPNmq8TUoA)
+0- npm i -g awsmobile-cli
+1- create-react-native-app RNExpoAuthProject
+2- cd RNExpoAuthProject
+3- awsmobile configure
+4- awsmobile init
+5- ? Where is your project's source directory:  .
+
+
