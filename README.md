@@ -37,14 +37,20 @@ npm install --save axios
 * [14 min Expo - React Native Authentication with Expo, AWS Amplify, & Cognito](https://www.youtube.com/watch?v=dhOk7aNIzKw)
 
 ```bash
-npm i -g awsmobile-cli
+|| npm i -g awsmobile-cli
+
 create-react-native-app RNExpoAuthProject
 cd RNExpoAuthProject
-awsmobile configure
-awsmobile init
-? Where is your project's source directory:  .
+
+awsmobile configure  	# access keys
+
+awsmobile init			# creates mobile hub directory
+?  1 = .  2 = default 3 = default 4 = default 5 name = RNExpoAuthProject
+
 awsmobile user-signin enable
 awsmobile push
 yarn / npm install
+
+# ir a 6'22" para empezar con estilos del formulario
 ```
 
