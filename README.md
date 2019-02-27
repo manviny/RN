@@ -1,4 +1,15 @@
-##first steps (0.54-RC)
+## Añadir Native Base e iconos de IonicIcons a React Native
+
+```js
+import * as React from 'react';
+import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
+
+import {  View, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Constants, Font, Expo } from 'expo';
+```
+
+## first steps (0.54-RC)
 
 * npm install -g create-react-native-app
 * create-react-native-app AwesomeProject
