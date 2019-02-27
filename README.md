@@ -1,4 +1,4 @@
-## Añadir Native Base e iconos de IonicIcons a React Native
+## Añadir Native Base e iconos de Ionicons a React Native
 
 ```js
 import * as React from 'react';
@@ -8,6 +8,31 @@ import {  View, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Constants, Font, Expo } from 'expo';
 ```
+## Añadir Tabs de NativeBase a RN  
+En este ejemplo además podrás ver como usar los iconos importados
+
+```js
+import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
+
+...
+
+      <Container> 
+       <Header hasTabs/>
+      <Tabs>
+        <Tab heading={<TabHeading><Text><Ionicons name="md-home" size={25} color={'cyan'} /></Text></TabHeading>}>
+          **Tu contenido**
+        </Tab>
+
+        <Tab heading={<TabHeading><Text><Ionicons name="logo-game-controller-b" size={25} color={'cyan'} /></Text></TabHeading>}>
+          **Tu contenido**
+        </Tab>
+      </Tabs>
+
+```
+
+
+
+
 
 ## first steps (0.54-RC)
 
