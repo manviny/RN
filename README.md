@@ -30,7 +30,42 @@ import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text }
 
 ```
 
+## Crear un componente (miComponente.js)
+```js
+import * as React from 'react';
+import { Text, View, StyleSheet, Image } from 'react-native';
 
+
+export default class miComponente extends React.Component {
+  render() {
+    return (
+      <Text>Hola</Text>
+    ); 
+  }
+}
+
+```
+## Incluir un nuevo componente dentro de un Tab
+```js
+import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
+
+// mis componentes
+import Home from './components/miComponente';
+...
+
+      <Container> 
+       <Header hasTabs/>
+      <Tabs>
+        <Tab heading={<TabHeading><Text><Ionicons name="md-home" size={25} color={'cyan'} /></Text></TabHeading>}>
+          <Home />
+        </Tab>
+
+        <Tab heading={<TabHeading><Text><Ionicons name="logo-game-controller-b" size={25} color={'cyan'} /></Text></TabHeading>}>
+          **Tu contenido**
+        </Tab>
+      </Tabs>
+
+```
 
 
 
