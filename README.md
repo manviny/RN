@@ -1,8 +1,9 @@
 ### Indice
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
-  - [Añadir Tabs de NativeBase a RN]https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
+  - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
   - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
+  - [Crear componente reusable](https://github.com/manviny/RN#crear-componente-reusable)
   
   
   
@@ -76,6 +77,7 @@ import Home from './components/miComponente';
 
 ```
 
+## Crear componente reusable
 
 
 ## first steps (0.54-RC)
