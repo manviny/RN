@@ -99,6 +99,26 @@ Para poder leer datos mediante 'http' vamos a usar la librería 'axios'
 ```bash
 npm install --save axios
 ```
+```js
+import React, {Component} from 'react';
+import {View, Text} from 'react-native';
+import axios from 'axios';
+
+class MyClass extends Component {
+  componentWillMount() {
+    axios.get('https://s3.amazonaws.com/mny-1x2/jornada_42')
+    .then( response => console.log(response) );
+  }
+}
+
+render() {
+  return (
+    <View>
+      <Text>Hola</Text>
+    </View>
+  )
+}
+```
 
 https://s3.amazonaws.com/mny-1x2/jornada_42
 
