@@ -3,7 +3,7 @@
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
   - [Ejemplos de estilo (tutorialspoint)](https://www.tutorialspoint.com/react_native/react_native_text.htm)
   - [Hacer un componente reusable](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
-  - [Leer contenido desde una fuente externa]()
+  - [Leer contenido desde una fuente externa ( componente de tipo clase )]()
   
 ### NativeBase  
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
@@ -21,7 +21,7 @@
   - [React Native Elements](https://react-native-training.github.io/react-native-elements/docs/overview.html)
   
   
-## Crear componente básico
+## Crear componente básico. Componente basado en una funcion.
 **encuentro.js**, debemos crear un fichero nuevo para cada componente.
 ```js
 import React from 'react';
@@ -91,7 +91,9 @@ import Encuentro from './components/encuentro';
 
 ```
 
-## Leer contenido desde una fuente externa  
+## Leer contenido desde una fuente externa. Componente basado en una Clase.
+
+Los componentes de tipo clase son componentes avanzados que tienen métodos de ciclo de vida, como por ejemplo ComponentWillMount.
 https://s3.amazonaws.com/mny-1x2/jornada_42
 
 
