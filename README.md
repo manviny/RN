@@ -7,6 +7,10 @@
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
   - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
 
+### ESTILOS
+  - [Flexbox en ReactNative (fecebook)](https://facebook.github.io/react-native/docs/flexbox)
+  - [Listado de propiedades para crear un diseño](https://facebook.github.io/react-native/docs/layout-props#alignitems)
+
 ### COMPONENTES
   - [Componentes de ReactNative](https://facebook.github.io/react-native/docs/components-and-apis)
   - [NativeBase](https://docs.nativebase.io/Components.html#Components)
