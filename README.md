@@ -7,6 +7,7 @@
 
   
 ## Crear componente básico
+**encuentro.js**
 ```js
 import React from 'react';
 import {Text} from 'react-native';
