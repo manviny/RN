@@ -8,7 +8,7 @@
   - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
 
 ### ESTILOS
-  - [Flexbox en ReactNative (fecebook)](https://facebook.github.io/react-native/docs/flexbox)
+  - [Flexbox en ReactNative (facebook)](https://facebook.github.io/react-native/docs/flexbox)
   - [Listado de propiedades para crear un diseño](https://facebook.github.io/react-native/docs/layout-props#alignitems)
 
 ### COMPONENTES
