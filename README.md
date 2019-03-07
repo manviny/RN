@@ -92,6 +92,8 @@ import Encuentro from './components/encuentro';
 ```
 
 ## Leer contenido desde una fuente externa  
+https://s3.amazonaws.com/mny-1x2/jornada_42
+
 
 ## Añadir Native Base e iconos de Ionicons a React Native
 
