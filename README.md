@@ -94,8 +94,11 @@ import Encuentro from './components/encuentro';
 ## Leer contenido desde una fuente externa. Componente basado en una Clase.
 
 Los componentes de tipo clase son componentes avanzados que tienen métodos de ciclo de vida, como por ejemplo 'componentWillMount'.   
-Para poder leer datos mediante 'http' vamos a usar la libreria 'axios'
+Para poder leer datos mediante 'http' vamos a usar la librería 'axios'
 
+```bash
+npm install --save axios
+```
 
 https://s3.amazonaws.com/mny-1x2/jornada_42
 
