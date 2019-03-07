@@ -2,6 +2,7 @@
   - [Crear componente básico](https://github.com/manviny/RN#crear-componente-básico)
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
   - [Ejemplos de estilo (tutorialspoint)](https://www.tutorialspoint.com/react_native/react_native_text.htm)
+  - [Hacer un componente reusable]()
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
   - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
@@ -45,7 +46,14 @@ import React from 'react';
 import {Text} from 'react-native';
 
 const Encuentro = () => {
-  return <Text style={styles.textStyle}>1 X 2</Text>
+  return(
+    <View>
+        <Text style={styles.textStyle}>1 X 2</Text>
+    </View>
+  )
+  // si solo devolvemos un elemento podemos usar la forma corta
+  // return <Text style={styles.textStyle}>1 X 2</Text>
+  
 };
 
 export default Encuentro;
@@ -57,6 +65,28 @@ const styles = {
 }
 ```
 
+### Hacer un componente reusable
+Vamos a pasar props del padre App.js al hijo encuentro.js   
+encuentro.js
+```js
+import React from 'react';
+import {Text} from 'react-native';
+
+const Encuentro = (props) => {
+  return <Text>{props.miTexto}</Text>
+};
+
+export default Encuentro;
+```
+#### usar componente
+```js
+// importamos el componente
+import Encuentro from './components/encuentro';
+...
+// lo usamos de la siguiente forma
+<Encuentro miTexto={'1 X 2'} />
+
+```
 
   
 ## Añadir Native Base e iconos de Ionicons a React Native
