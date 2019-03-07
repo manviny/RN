@@ -3,7 +3,7 @@
   - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
   - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
-  - [Crear componente reusable](https://github.com/manviny/RN#crear-componente-reusable)
+  - [Crear componente básico](https://github.com/manviny/RN#crear-componente-reusable)
   
   
   
@@ -77,7 +77,17 @@ import Home from './components/miComponente';
 
 ```
 
-## Crear componente reusable
+## Crear componente básico
+```js
+import React from 'react';
+import {Text} from 'react-native';
+
+const Encuentro = () => {
+  return <Text>1 X 2</Text>
+};
+
+export default Encuentro;
+
 
 
 ## first steps (0.54-RC)
