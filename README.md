@@ -1,11 +1,17 @@
 ### Indice
   - [Crear componente básico](https://github.com/manviny/RN#crear-componente-básico)
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
+  - [ejemplos de estilo](https://www.tutorialspoint.com/react_native/react_native_text.htm)
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
   - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
   - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
 
+### COMPONENTES
+  - [Componentes de ReactNative](https://facebook.github.io/react-native/docs/components-and-apis)
+  - [NativeBase](https://docs.nativebase.io/Components.html#Components)
+  - [React Native Elements](https://react-native-training.github.io/react-native-elements/docs/overview.html)
+  
   
 ## Crear componente básico
 **encuentro.js**, debemos crear un fichero nuevo para cada componente.
