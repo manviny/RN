@@ -1,5 +1,6 @@
 ### Indice
   - [Crear componente básico](https://github.com/manviny/RN#crear-componente-básico)
+  - [Dar estilo a un componente](https://github.com/manviny/RN#crear-componente-básico)
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
   - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
@@ -28,6 +29,25 @@ import Encuentro from './components/encuentro';
 
 ```
   
+## Dar estilo a un componente
+```js
+import React from 'react';
+import {Text} from 'react-native';
+
+const Encuentro = () => {
+  return <Text style={styles.textStyle}>1 X 2</Text>
+};
+
+export default Encuentro;
+
+const styles = {
+  testStyle: {
+    fontSize: 20
+  }  
+}
+```
+
+
   
 ## Añadir Native Base e iconos de Ionicons a React Native
 
