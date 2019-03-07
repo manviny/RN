@@ -1,9 +1,9 @@
 ### React NAtive
-  - [Crear componente básico](https://github.com/manviny/RN#crear-componente-básico)
+  - [Crear componente básico ( componente basado en Función )](https://github.com/manviny/RN#crear-componente-básico)
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
   - [Ejemplos de estilo (tutorialspoint)](https://www.tutorialspoint.com/react_native/react_native_text.htm)
   - [Hacer un componente reusable](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
-  - [Leer contenido desde una fuente externa ( componente de tipo clase )]()
+  - [Leer contenido desde una fuente externa ( componente basado en Clase )]()
   
 ### NativeBase  
   - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
