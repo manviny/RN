@@ -3,12 +3,6 @@
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
   - [Hacer un componente reusable](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
-  
-### NativeBase  
-  - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
-  - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
-  - [Crear un componente (miComponente.js)](https://github.com/manviny/RN#crear-un-componente-micomponentejs)
-  - [Incluir un nuevo componente dentro de un Tab](https://github.com/manviny/RN#incluir-un-nuevo-componente-dentro-de-un-tab)
 
 ### ESTILOS
   - [Flexbox en ReactNative (facebook)](https://facebook.github.io/react-native/docs/flexbox)
@@ -18,6 +12,8 @@
 ### COMPONENTES
   - [Componentes de ReactNative](https://facebook.github.io/react-native/docs/components-and-apis)
   - [NativeBase](https://docs.nativebase.io/Components.html#Components)
+    - [Añadir Native Base e iconos de Ionicons a React Native](https://github.com/manviny/RN#a%C3%B1adir-native-base-e-iconos-de-ionicons-a-react-native)  
+    - [Añadir Tabs de NativeBase a RN](https://github.com/manviny/RN#a%C3%B1adir-tabs-de-nativebase-a-rn)  
   - [React Native Elements](https://react-native-training.github.io/react-native-elements/docs/overview.html)
   
   
@@ -155,44 +151,6 @@ import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text }
       </Tabs>
 
 ```
-
-## Crear un componente (miComponente.js)
-```js
-import * as React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
-
-
-export default class miComponente extends React.Component {
-  render() {
-    return (
-      <Text>Hola</Text>
-    ); 
-  }
-}
-
-```
-## Incluir un nuevo componente dentro de un Tab
-```js
-import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
-
-// mis componentes
-import Home from './components/miComponente';
-...
-
-      <Container> 
-       <Header hasTabs/>
-      <Tabs>
-        <Tab heading={<TabHeading><Text><Ionicons name="md-home" size={25} color={'cyan'} /></Text></TabHeading>}>
-          <Home />
-        </Tab>
-
-        <Tab heading={<TabHeading><Text><Ionicons name="logo-game-controller-b" size={25} color={'cyan'} /></Text></TabHeading>}>
-          **Tu contenido**
-        </Tab>
-      </Tabs>
-
-```
-
 
 
 
