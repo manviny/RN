@@ -118,7 +118,9 @@ class MyClass extends Component {
   
   // Creamos una funcion para mostrar los datos recibidos
   renderEncuentros() {
-    return this.state.encuentros.map( encuentro => <Text>{encuentro.equipo1}</Text> );
+    return this.state.encuentros.map( encuentro => 
+      <Text key={encuentro.encuentro} >{encuentro.e1}</Text> 
+    );
   }
   
 }
@@ -132,6 +134,13 @@ render() {
 }
 ```
 
+```json
+[
+  { "encuentro":"1", "e1":"Valencia", "e2":"Barcelona", "res":"0 - 0" },
+  { "encuentro":"2", "e1":"Madrid", "e2":"Sevilla", "res":"1 - 0"},
+  { "encuentro":"3", "e1":"Villareal", "e2":"Levante", "res":"0 - 2"}
+]
+```
 https://s3.amazonaws.com/mny-1x2/jornada_42
 
 
