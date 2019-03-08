@@ -67,6 +67,7 @@ const styles = {
   }  
 }
 ```
+[más sobre estilos](https://github.com/manviny/RN/blob/master/README.md#estilos)  
 
 ## Hacer un componente reusable
 Vamos a pasar props del padre App.js al hijo encuentro.js   
