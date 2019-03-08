@@ -120,6 +120,9 @@ class MyClass extends Component {
   renderEncuentros() {
     return this.state.encuentros.map( encuentro => 
       <Text key={encuentro.encuentro} >{encuentro.e1}</Text> 
+      // Si quisieramos crear un componente para renderizar cada encuentro
+      // Creariamos un componente DetalleEncuentro y le pasariamos el valor de cada encuentro
+      // <DetalleEncuentro key={encuentro.encuentro}>{encuentro}</DetalleEncuentro>
     );
   }
   
@@ -133,6 +136,19 @@ render() {
   )
 }
 ```
+DetalleEncuentro.js
+
+```js
+import React from 'react';
+import {Text} from 'react-native';
+
+const DetalleEncuentro = (props) => {
+  return <Text>{props.encuentro.e1}</Text>
+};
+
+export default DetalleEncuentro;
+```
+
 
 https://s3.amazonaws.com/mny-1x2/jornada_42  
 JSON 
