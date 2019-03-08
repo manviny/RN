@@ -134,6 +134,8 @@ render() {
 }
 ```
 
+https://s3.amazonaws.com/mny-1x2/jornada_42  
+JSON 
 ```json
 [
   { "encuentro":"1", "e1":"Valencia", "e2":"Barcelona", "res":"0 - 0" },
@@ -141,7 +143,7 @@ render() {
   { "encuentro":"3", "e1":"Villareal", "e2":"Levante", "res":"0 - 2"}
 ]
 ```
-https://s3.amazonaws.com/mny-1x2/jornada_42
+
 
 
 ## Añadir Native Base e iconos de Ionicons a React Native
