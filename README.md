@@ -102,16 +102,31 @@ import {View, Text} from 'react-native';
 import axios from 'axios';
 
 class MyClass extends Component {
+
+  // Definimos el 'estado' del componente, cada vez que el estado cambia el componente se renderiza de nuevo
+  
+  // Declaramos un estado inicial para el componente
+  state = { encuentros:[] };
+  
+  
+  
+  // Se ejecuta justo antes de renderizar el componente
   componentWillMount() {
     axios.get('https://s3.amazonaws.com/mny-1x2/jornada_42')
-    .then( response => console.log(response) );
+    .then( response => this.setState( { encuentros: response.data } ) );
   }
+  
+  // Creamos una funcion para mostrar los datos recibidos
+  renderEncuentros() {
+    return this.state.encuentros.map( encuentro => <Text>{encuentro.equipo1}</Text> );
+  }
+  
 }
 
 render() {
   return (
     <View>
-      <Text>Hola</Text>
+      {this.renderEncuentros()}
     </View>
   )
 }
