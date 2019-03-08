@@ -3,7 +3,7 @@
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
   - [Hacer un componente reusable](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
-  - [Pasar componentes a un componente]()
+  - [Pasar componentes como propiedades]()
   
 ### ESTILOS
   - [Flexbox en ReactNative (facebook)](https://facebook.github.io/react-native/docs/flexbox)
