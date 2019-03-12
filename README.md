@@ -195,7 +195,9 @@ import { Button, Container, Content, Header, Tab, Tabs, TabHeading, Icon, Text }
 
 ```
 
-
+### Ejercicios
+Definir XML y JSON, diferencias, estructura básica, enlaces, donde se usa, futuro      
+Crear la misma estructura en XML y JSON
 
 ## first steps (0.54-RC)
 
