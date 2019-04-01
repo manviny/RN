@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 import axios from 'axios';
 
-class AxiosComponent extends Component {
+export default class AxiosComponent extends React.Component 
+
 	// class level property
 	// 1.- initialize a list
 	state = { itemsList: [] };
@@ -29,4 +30,3 @@ class AxiosComponent extends Component {
 	}
 }
 
-export default AxiosComponent;
