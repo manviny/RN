@@ -4,6 +4,7 @@
   - [Hacer un componente reusable](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
   - [Pasar componentes como propiedades]()
+  - [Leer Json desde una URL](https://github.com/manviny/RN/blob/master/AxiosComponent.js)
   
 ### ESTILOS
   - [Flexbox en ReactNative (facebook)](https://facebook.github.io/react-native/docs/flexbox)
