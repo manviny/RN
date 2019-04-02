@@ -1,7 +1,8 @@
 ### React Native
   - [Componente tipo Función ( crear componente básico )](https://github.com/manviny/RN/blob/master/README.md#crear-componente-b%C3%A1sico-componente-basado-en-una-funcion)
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
-  - [Pasar parámetros al hijo ( hacer un componente reusable )](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
+  - [Pasar parámetros al hijo - props ( hacer un componente reusable )](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)
+  - [Padre lee parámetros del hijo  ( props.children )](https://github.com/manviny/RN/blob/master/README.md#hacer-un-componente-reusable)  
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
   - [Pasar componentes como propiedades]()
   - [Leer Json desde una URL ( con axios )](https://github.com/manviny/RN/blob/master/ejemplos/AxiosComponent.js)
@@ -91,6 +92,42 @@ import Encuentro from './components/encuentro';
 <Encuentro miTexto={'1 X 2'} />
 
 ```
+
+## Padre lee parámetros del hijo 
+#### hijo
+```js
+import React from 'react';
+import {View, Text} from 'react-native';
+import EncuentroContenedor from './EncuentroContenedor';
+
+const EncuentroDetalle = (props) => {
+  return(
+    <EncuentroContenedor>
+      <Text>{props.encuentro.local}</Text>
+    </EncuentroContenedor>
+  );
+};
+
+export default EncuentroDetalle;
+```
+#### padre
+```js
+import React from 'react';
+import {View} from 'react-native';
+
+const EncuentroContenedor = (props) => {
+  return(
+    <View>
+      {props.children}
+    </View>
+  );
+};
+
+
+
+export default EncuentroContenedor;
+```
+
 
 ## Leer contenido desde una fuente externa. Componente basado en una Clase.
 
