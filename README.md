@@ -98,7 +98,7 @@ import Encuentro from './components/encuentro';
 ```js
 import React from 'react';
 import {View, Text} from 'react-native';
-import EncuentroContenedor from './EncuentroContenedor';
+import EncuentroContenedor from './encuentroContenedor';
 
 const EncuentroDetalle = (props) => {
   return(
