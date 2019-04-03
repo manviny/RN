@@ -6,6 +6,7 @@
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
   - [Pasar componentes como propiedades]()
   - [Leer Json desde una URL ( con axios )](https://github.com/manviny/RN/blob/master/ejemplos/AxiosComponent.js)
+  - [crear app que consuma datos de openwheatermap](https://octuweb.com/trabajando-con-apis-el-tiempo-en-tu-web/)
   - [Web scraping ( con axios y cheerio )](https://github.com/manviny/RN/blob/master/ejemplos/Axios_Cheerio.js)
   
   
