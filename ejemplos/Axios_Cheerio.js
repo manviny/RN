@@ -16,6 +16,7 @@ export default class Encuentro extends React.Component  {
       .map(item => {
         const $item = $(item);
         return{
+          id : $item.find("td:nth-child(1)").text(),
           title : $item.find("td:nth-child(2)").text()
         }
       });
@@ -24,7 +25,7 @@ export default class Encuentro extends React.Component  {
   }
 
   renderAlbums() {
-    return this.state.albums.map(album => <Text>{album.title}</Text>);
+    return this.state.albums.map(album => <Text key={album.id}>{album.title}</Text>);
   }
 
   render() {
