@@ -16,10 +16,12 @@ export default class Encuentro extends React.Component  {
       .map(item => {
         const $item = $(item);
         return{
+          // podemos recorrer todos los elementos
           id : $item.find("td:nth-child(1)").text(),
           title : $item.find("td:nth-child(2)").text()
         }
       });
+      // añadimos los elementos al estado
       this.setState({ albums: items }) 
     })
   }
