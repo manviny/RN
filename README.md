@@ -17,6 +17,7 @@
   - [Flexbox en ReactNative (facebook)](https://facebook.github.io/react-native/docs/flexbox)
   - [Listado de propiedades para crear un diseño](https://facebook.github.io/react-native/docs/layout-props#alignitems)
   - [Ejemplos de estilo (tutorialspoint)](https://www.tutorialspoint.com/react_native/react_native_text.htm)
+  - [Cheatsheet](https://github.com/vhpoet/react-native-styling-cheat-sheet)
   - [CSS TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### COMPONENTES
