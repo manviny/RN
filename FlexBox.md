@@ -13,28 +13,28 @@ import * as React from 'react';
 import { Text, View, StyleSheet, Button, TextInput } from 'react-native';
  
 export default class App extends React.Component {
-render() {
-return (
-<View style={styles.container}>
-<Text>Logeate</Text>
-<Button title="Login" />
-<TextInput placeholder="email" />
-<TextInput placeholder="Password" />
-<TextInput placeholder="confirmar password" />
-<Button title="enviar" onPress={this.login} />
-</View>
-);
-}
+ render() {
+  return (
+   <View style={styles.container}>
+       <Text>Logeate</Text>
+       <Button title="Login" />
+       <TextInput placeholder="email" />
+       <TextInput placeholder="Password" />
+       <TextInput placeholder="confirmar password" />
+       <Button title="enviar" onPress={this.login} />
+   </View>
+  );
+ }
 }
  
 const styles = StyleSheet.create({
-container: {
-borderColor: "red",
-borderWidth: 1,
-flex: 1,
-justifyContent: "center",
-alignItems: "center",
-},
+ container: {
+  borderColor: "red",
+  borderWidth: 1,
+  flex: 1,
+  justifyContent: "center",
+  alignItems: "center",
+ },
 });
 ```
 
