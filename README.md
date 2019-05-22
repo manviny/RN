@@ -6,7 +6,7 @@
   - [Leer contenido desde una fuente externa ( componente basado en Clase )](https://github.com/manviny/RN/blob/master/README.md#leer-contenido-desde-una-fuente-externa-componente-basado-en-una-clase)
   - [Pasar componentes como propiedades]()
   - [Pasar parámetros entre diferentes pantallas 1 ](https://aboutreact.com/react-native-pass-value-from-one-screen-to-another-using-react-navigation/)
-  - [Pasar parámetros entre diferentes pantallas 1 ](https://stackoverflow.com/questions/53942539/how-to-pass-data-between-react-native-screens)
+  - [Pasar parámetros entre diferentes pantallas 2 ](https://stackoverflow.com/questions/53942539/how-to-pass-data-between-react-native-screens)
   - [Leer Json desde una URL ( con axios )](https://github.com/manviny/RN/blob/master/ejemplos/AxiosComponent.js)
   - [crear app que consuma datos de OpenWeatherMap](https://github.com/manviny/RN/blob/master/ejemplos/eltiempo.js)
   - [Hacer Web Scraping con  Cheerio](https://github.com/manviny/RN/blob/master/ejemplos/Axios_Cheerio.js)
