@@ -15,4 +15,6 @@
   - actualizamos el **estado** en la respuesta de axios __this.setState({ albums: response.data })__
   - renderizamos cada álbum llamando al componente [AlbumDetail.ls](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumDetail.js)
   
-### [Card, componente contenedor para dar estilo](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Card.js)
+### [Card, componente contenedor](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Card.js)
+- Usamos este componente a modo de contenerdor de otros componentes
+- Este pasara a los elementos que contiene las propiedades del padre {props.children}
