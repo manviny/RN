@@ -2,7 +2,7 @@
 - Los componentes funcionales son sencillos y devuelven datos estáticos  
 - Ejemplo de componente reusable
 ```js  
- <Header headerText='Albums!' />
+ <Header headerText={'Albums!'} />
  ```
  
  ### [AbumList ( componente de tipo clase, CLASS )](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumList.js)
