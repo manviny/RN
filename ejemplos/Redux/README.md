@@ -6,4 +6,5 @@ Ejemplo de componente reusable
  ```
  
  ### [AbumList ( componente de tipo clase, CLASS )](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumList.js)
-Los componentes basados en clases devuelven datos que pueden ser dinámicos y sabe cuando se renderiza el mismo.
+- Los componentes basados en clases devuelven datos que pueden ser dinámicos y sabe cuando se renderiza el mismo.  
+- componentWillMount: 
