@@ -11,6 +11,6 @@
 - capturar datos a traves de 'https' de forma asíncrona mediante **axios** y presentarlo en pantalla
   - npm install --save axios 
   - import axios from 'axios'
-  - inicializamos el **estado** con un array vacio de elmentos state = { albums:[]}
+  - inicializamos el **estado** con un array vacio de elmentos --state = { albums:[]}--
   - actualizamos el **estado** en la respuesta de axios this.setState({ albums: response.data })
   
