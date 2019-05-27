@@ -19,7 +19,21 @@
 - Usamos este componente a modo de contenerdor de otros componentes
 - Este pasara a los componentes que contiene como propiedades
 ```js
-<View>
-    {props.children}
-</View>
+ //  {props.children}  ==  <Text>Hola</Text> 
+
+const Card = (props) => {
+  return(
+    <View style={styles.containerStyle}>
+      {props.children}
+    </View>
+  );
+  
+}
+
+return(
+   <Card>
+       <Text>Hola</Text>    
+   </Card> 
+
+  
 ```
