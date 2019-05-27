@@ -13,5 +13,5 @@
   - import axios from 'axios'
   - inicializamos el **estado** con un array vacio de elmentos __state = { albums:[]}__
   - actualizamos el **estado** en la respuesta de axios __this.setState({ albums: response.data })__
-  - renderizamos cada álbum llamando al componente [<AlbumDetail key={album.title} album={album} />](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumDetail.js)
+  - renderizamos cada álbum llamando al componente ["<AlbumDetail key={album.title} album={album} />"](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumDetail.js)
   
