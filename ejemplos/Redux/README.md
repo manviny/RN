@@ -38,3 +38,8 @@ return(
   
 ```
 ### [CardSection, otro componente contenedor](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/CardSection.js)
+```js
+    <Card>
+      <CardSection>
+       <Text>
+```
