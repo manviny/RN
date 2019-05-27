@@ -11,3 +11,4 @@
 - capturar datos a traves de 'https' de forma asíncrona mediante **axios** 
   - npm install --save axios 
   - import axios from 'axios'
+1- inicializamos el estado con un array vacio de elmentos state = { albums:[]}
