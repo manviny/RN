@@ -17,4 +17,9 @@
   
 ### [Card, componente contenedor](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Card.js)
 - Usamos este componente a modo de contenerdor de otros componentes
-- Este pasara a los elementos que contiene las propiedades del padre {props.children}
+- Este pasara a los componentes que contiene como propiedades
+```js
+<View>
+    {props.children}
+</View>
+```
