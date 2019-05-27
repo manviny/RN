@@ -24,7 +24,7 @@
 const Card = (props) => {
   return(
     <View style={styles.containerStyle}>
-      {props.children}
+  =>    {props.children}
     </View>
   );
   
@@ -32,7 +32,7 @@ const Card = (props) => {
 
 return(
    <Card>
-       <Text>Hola</Text>    
+  =>     <Text>Hola</Text>    
    </Card> 
 
   
