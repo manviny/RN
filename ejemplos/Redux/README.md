@@ -71,3 +71,6 @@ return(
 
  
  ```
+
+### [Button](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Button.js)
+- [botón documentacion facebook](https://facebook.github.io/react-native/docs/button)
