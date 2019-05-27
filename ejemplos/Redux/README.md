@@ -43,3 +43,11 @@ return(
       <CardSection>
        <Text>
 ```
+### [AlbumDetail](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumDetail.js)
+- las imagenes necesitan dimensines para que se puedan visualizar
+- si queremos una imagen con altura fija y que se adapte el ancho al contenedor:
+```js
+    height: 300,
+    flex: 1,
+    width: null
+ ```
