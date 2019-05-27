@@ -51,3 +51,23 @@ return(
     flex: 1,
     width: null
  ```
+ ### [ScrollView](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumList.js)
+ ```js
+ // AlbumList.js
+ // 1.- hacemos el import
+ import { ScrollView } from 'react-native';
+ ...   
+ // 2.- usamos el ScrollView
+    <ScrollView>
+      { this.renderAlbums() }
+    </ScrollView>
+ // App.js   
+ // 3.-En el padre debemos poner estilo flex:1   
+  <View style={{flex:1}}>
+   
+    <AlbumList />
+  </View>     
+ ...
+
+ 
+ ```
