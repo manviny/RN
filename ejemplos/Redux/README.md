@@ -5,5 +5,5 @@ Ejemplo de componente reusable
  <Header headerText='Albums!' />
  ```
  
- ### ALbumList ( componente de tipo clase )
+ ### [AbumList ( componente de tipo clase )](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumList.js)
 Los componentes basados en clases devuelven datos que pueden ser dinámicos y sabe cuando se renderiza el mismo.
