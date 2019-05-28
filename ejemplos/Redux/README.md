@@ -52,6 +52,7 @@ return(
     width: null
  ```
  ### [ScrollView](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/AlbumList.js)
+ Debemos ponerle al padre contenedor del ScrollView flex:1 para que este funcione
  ```js
  // AlbumList.js
  // 1.- hacemos el import
@@ -73,4 +74,4 @@ return(
  ```
 
 ### [Button (style propio)](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Button.js)
-- [botón documentacion facebook](https://facebook.github.io/react-native/docs/button)
+En este ejemplo vemos como crear un botón totalmente configurable o bien podemos usar el [botón definido por react-native](https://facebook.github.io/react-native/docs/button)
