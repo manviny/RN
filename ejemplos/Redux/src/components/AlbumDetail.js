@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, Button, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
-import Button from './Button';
+import ButtonMe from './Button';
 
 const AlbumDetail = ({album}) => {
-  const { title, artist, thumbnail_image, image } = album; 
+  const { title, artist, thumbnail_image, image, url } = album; 
   const {
     thumbnailStyle, 
     headerContentStyle, 
@@ -34,7 +34,13 @@ const AlbumDetail = ({album}) => {
         />
       </CardSection>
       <CardSection>
-        <Button  />
+        <ButtonMe onPress={() => Linking.openURL(url)} />
+        <Button
+          // onPress={}
+          title="Learn More"
+          color="#841584"
+          accessibilityLabel="Learn more about this purple button"
+        />        
       </CardSection>
     </Card>
   );
