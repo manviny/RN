@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, TouchableOpacity, StyleSheet  } from 'react-native';
 
-const Button = props => {
+const Button = (props) => {
   return (
-    <TouchableOpacity style={styles.buttonStyle} >
-      <Text style={styles.textStyle} >Add2</Text>
+    <TouchableOpacity style={styles.buttonStyle} onPress={props.onPress}>
+      <Text style={styles.textStyle} >Ver</Text>
     </TouchableOpacity>
   );
 };
@@ -29,5 +29,4 @@ const styles = {
     marginRight: 5,
   },
 };
-
 export default Button;
