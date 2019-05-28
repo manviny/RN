@@ -75,3 +75,6 @@ return(
 
 ### [Button (style propio)](https://github.com/manviny/RN/blob/master/ejemplos/Redux/src/components/Button.js)
 En este ejemplo vemos como crear un botón totalmente configurable o bien podemos usar el [botón definido por react-native](https://facebook.github.io/react-native/docs/button)
+
+### [Abrir wee desde botón]()
+Al hacer clic en el botón debemos pasarle la url.
