@@ -97,6 +97,11 @@ import Icon from 'react-native-vector-icons/FontAwesome';
     backgroundColor="#3b5998"
     onPress={this.loginWithFacebook}
   >
+  <Icon
+     name="ios-arrow-back"
+     color="#fff"
+     size={25}
+   />  
 ```
 
 
