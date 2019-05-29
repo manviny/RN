@@ -87,3 +87,16 @@ import { Linking } from 'react-native';
 ...
 <ButtonMe onPress={() => Linking.openURL(url)} />
 ```
+
+### [Añadir iconos](https://github.com/oblador/react-native-vector-icons#web-with-webpack)
+```js
+import Icon from 'react-native-vector-icons/FontAwesome';
+...
+  <Icon.Button
+    name="facebook"
+    backgroundColor="#3b5998"
+    onPress={this.loginWithFacebook}
+  >
+```
+
+ // 2.- usamos el ScrollView
