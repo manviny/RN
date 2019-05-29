@@ -99,4 +99,4 @@ import Icon from 'react-native-vector-icons/FontAwesome';
   >
 ```
 
- // 2.- usamos el ScrollView
+
