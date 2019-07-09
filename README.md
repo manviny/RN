@@ -2,12 +2,11 @@
 
 #### react-native
 - react-native init myProject
-- cd .../myProject && react-native run-android
 
 #### Run App
 - start Android emulator
 - in  terminal one, run: **react-native start**
-- in terminal two, run: **reac-native run-android**
+- in terminal two, run: **cd .../myProject && react-native run-android **
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
