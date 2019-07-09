@@ -5,7 +5,7 @@
 ### Run App
 - start Android emulator (AVD Manager)
 - in  terminal __one__, run: **cd .../myProject && react-native start**
-- in terminal __two__, run: **react-native run-android**
+- in terminal __two__, run: **cd .../myProject && eact-native run-android**
 
 
 ### Install react navigation and Redux
