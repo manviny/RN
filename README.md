@@ -1,6 +1,9 @@
-###  Start App
+###  Init new App
 - react-native init myProject
 - cd .../myProject && react-native run-android
+
+### Install react navigation and Redux
+- npm install --save react-navigation redux react-redux
 
 ### React Native
   - [Componente tipo Función ( crear componente básico )](https://github.com/manviny/RN/blob/master/README.md#crear-componente-b%C3%A1sico-componente-basado-en-una-funcion)
