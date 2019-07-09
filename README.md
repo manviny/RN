@@ -1,18 +1,19 @@
 ###  Init new App
 
-#### react-native
 - react-native init myProject
 
-#### Run App
-- start Android emulator
-- in  terminal one, run: **cd .../myProject && react-native start**
-- in terminal two, run: **react-native run-android **
+### Run App
+- start Android emulator (AVD Manager)
+- in  terminal __one__, run: **cd .../myProject && react-native start**
+- in terminal __two__, run: **react-native run-android**
+
+
+### Install react navigation and Redux
+- npm install --save react-navigation redux react-redux
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
 
-### Install react navigation and Redux
-- npm install --save react-navigation redux react-redux
 
 ### React Native
   - [Componente tipo Función ( crear componente básico )](https://github.com/manviny/RN/blob/master/README.md#crear-componente-b%C3%A1sico-componente-basado-en-una-funcion)
