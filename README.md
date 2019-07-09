@@ -1,3 +1,7 @@
+###  Start App
+- react-native init maizot
+- cd .../maizot && react-native run-android
+
 ### React Native
   - [Componente tipo Función ( crear componente básico )](https://github.com/manviny/RN/blob/master/README.md#crear-componente-b%C3%A1sico-componente-basado-en-una-funcion)
   - [Dar estilo a un componente](https://github.com/manviny/RN/blob/master/README.md#dar-estilo-a-un-componente)
