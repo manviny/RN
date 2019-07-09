@@ -1,6 +1,10 @@
 ###  Init new App
+
+#### react-native
 - react-native init myProject
 - cd .../myProject && react-native run-android
+#### [yarn](https://yarnpkg.com/en/docs/usage)
+- yarn init
 
 ### Install react navigation and Redux
 - npm install --save react-navigation redux react-redux
