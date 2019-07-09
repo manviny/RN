@@ -12,6 +12,7 @@
 
 ### Install react navigation and Redux
 - npm install --save react-navigation redux react-redux
+- yarn add react-navigation redux react-redux
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
