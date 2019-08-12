@@ -5,14 +5,43 @@
 ### Run App
 - start Android emulator (AVD Manager)
   - in  terminal __one__, run: **cd .../myProject && react-native start**
-  - in terminal __two__, run: **cd .../myProject && eact-native run-android**
-- start in IOS Emulator
-  - in terminal: **cd .../myProject && eact-native run-ios**
+  - in terminal __two__, run: **cd .../myProject && react-native run-android**
+- start on IOS Emulator
+  - in  terminal __one__, run: **cd .../myProject && react-native start** if necessary
+  - in terminal: **cd .../myProject && react-native run-ios --simulator="iPhone 5s"**
 
 
-### Install react navigation and Redux
-- npm install --save react-navigation redux react-redux
-- yarn add react-navigation redux react-redux
+### SI hay proble mas con Xcode
+- cd ios
+- pod install
+- abrir .xcworkspace en vez de xcodeproj
+
+
+### Install Redux
+- npm install --save  redux react-redux
+- yarn add redux react-redux
+- yarn add redux-thunk
+
+
+### Install react navigation 
+- npm install --save react-navigation 
+- yarn add react-navigation 
+- yarn add react-native-gesture-handler react-native-reanimated
+POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
+
+
+### Install react geolocation 
+- yarn add react-native-geolocation-service
+
+### Install Amplify
+- yarn add aws-amplify​
+- yarn add aws-amplify-react-native
+- amplify init
+- amplify add auth
+- amplify add storage
+- amplify add api
+- amplify publish
+
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
