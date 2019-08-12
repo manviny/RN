@@ -4,8 +4,10 @@
 
 ### Run App
 - start Android emulator (AVD Manager)
-  - in  terminal __one__, run: **cd .../myProject && react-native start**
-  - in terminal __two__, run: **cd .../myProject && react-native run-android**
+  - in  terminal __one__: 
+     - **cd .../myProject && react-native start**
+  - in terminal __two__:
+     - **cd .../myProject && react-native run-android**
 - start on IOS Emulator
   - in  terminal __one__, run: **cd .../myProject && react-native start** if necessary
   - in terminal: **cd .../myProject && react-native run-ios --simulator="iPhone 5s"**
