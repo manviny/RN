@@ -26,12 +26,13 @@
 ### Install react navigation 
 - npm install --save react-navigation 
 - yarn add react-navigation 
-- yarn add react-native-gesture-handler react-native-reanimated
-POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
+- yarn add react-native-gesture-handler react-native-reanimated   
 
 
 ### Install react geolocation 
-- yarn add react-native-geolocation-service
+- yarn add react-native-geolocation-service  
+POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
+
 
 ### Install Amplify
 - yarn add aws-amplify​
