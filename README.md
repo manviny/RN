@@ -12,8 +12,12 @@
   - in  terminal __one__, run: **cd .../myProject && react-native start** if necessary
   - in terminal: **cd .../myProject && react-native run-ios --simulator="iPhone 5s"**
 
+### Si hemos descargado desde Github en vez de crear nuevo proyecto desde 0:
+- yarn 
+- cd ios
+- pod install
 
-### SI hay proble mas con Xcode
+### SI hay problemas con Xcode
 - cd ios
 - pod install
 - abrir .xcworkspace en vez de xcodeproj
