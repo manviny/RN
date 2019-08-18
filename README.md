@@ -43,8 +43,8 @@ POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-commun
 ### Install Amplify
 Sin no tenemos amplify instalado:  
 - $ npm install -g @aws-amplify/cli
-- $ amplify configure . 
-Una vez instalado .                         
+- $ amplify configure .  
+Una vez instalado .                          
 - yarn add aws-amplify​
 - yarn add aws-amplify-react-native
 - amplify init
