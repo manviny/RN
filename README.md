@@ -45,7 +45,35 @@ Start adding Amplify .
 - amplify add api
 - amplify push
 
+#### Auth
+<details><summary>index.js</summary>
+```js
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
 
+// Global config for amplify
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
+
+
+AppRegistry.registerComponent(appName, () => App);
+```
+</details>
+<details><summary>app.js</summary>
+```js
+// Amplify Auth
+import { withAuthenticator } from 'aws-amplify-react-native';
+
+export default withAuthenticator(App, { 
+    includeGreetings: true ,
+    signUpConfig: {
+      hiddenDefaults: ['phone_number']
+    }
+})
+```
+</details>
 ### Install Redux
 - npm install --save  redux react-redux
 - yarn add redux react-redux
