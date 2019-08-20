@@ -56,6 +56,21 @@ Una vez instalado:
 - amplify add api
 - amplify push
 
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
+# ==============================================
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
