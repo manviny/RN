@@ -32,8 +32,7 @@ Sin no tenemos amplify instalado:
 
 Una vez instalado:  
 
-- yarn add aws-amplify​
-- yarn add aws-amplify-react-native  
+- yarn add aws-amplify aws-amplify-react-native 
 - yarn add amazon-cognito-identity-js
 - cd ios
 - pod install --repo-update . 
@@ -47,7 +46,9 @@ Start adding Amplify .
 
 #### Auth
 <details><summary>index.js</summary>
+  
 ```js
+
 import {AppRegistry} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
@@ -61,19 +62,8 @@ Amplify.configure(config);
 AppRegistry.registerComponent(appName, () => App);
 ```
 </details>
-<details><summary>app.js</summary>
-```js
-// Amplify Auth
-import { withAuthenticator } from 'aws-amplify-react-native';
 
-export default withAuthenticator(App, { 
-    includeGreetings: true ,
-    signUpConfig: {
-      hiddenDefaults: ['phone_number']
-    }
-})
-```
-</details>  
+ 
 
 
 ### Install Redux
