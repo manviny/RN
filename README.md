@@ -44,8 +44,7 @@ Start adding Amplify .
 - amplify add api
 - amplify push
 
-### Example
-#### Auth
+### Auth Example
 <details><summary>index.js</summary>
   
 ```js
