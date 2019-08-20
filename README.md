@@ -49,7 +49,15 @@ Sin no tenemos amplify instalado:
 Una vez instalado:  
 
 - yarn add aws-amplify​
-- yarn add aws-amplify-react-native
+- yarn add aws-amplify-react-native   
+RN < 0.60
+-react-native link amazon-cognito-identity-js . 
+RN >= 0.60 . 
+- yarn add amazon-cognito-identity-js
+- cd ios
+- pod install --repo-update . 
+
+Start adding Amplify . 
 - amplify init
 - amplify add auth
 - amplify add storage
