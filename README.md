@@ -40,7 +40,7 @@
 POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
 
 
-### Install Amplify
+## Install Amplify
 Sin no tenemos amplify instalado:  
 
 - $ npm install -g @aws-amplify/cli
@@ -56,21 +56,17 @@ Una vez instalado:
 - amplify add api
 - amplify push
 
-## collapsible markdown?
 
-<details><summary>CLICK ME</summary>
-<p>
+<details><summary>index.js</summary>
 
-#### yes, even hidden code blocks!
 
-```python
+```js
 print("hello world!")
 ```
 
-</p>
 </details>
 
-# ==============================================
+
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
 - yarn init
