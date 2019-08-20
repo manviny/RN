@@ -73,7 +73,9 @@ export default withAuthenticator(App, {
     }
 })
 ```
-</details>
+</details>  
+
+
 ### Install Redux
 - npm install --save  redux react-redux
 - yarn add redux react-redux
