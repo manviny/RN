@@ -80,10 +80,31 @@ export default withAuthenticator(App, {
 </details>
 
 
-### Install Redux
-- npm install --save  redux react-redux
+# Install Redux
 - yarn add redux react-redux
 - yarn add redux-thunk
+
+### Redux Example  
+
+ <details><summary>app.js</summary>
+  
+```js
+
+import { Provider } from 'react-redux';
+import configureStore from './src/store/configureStore';
+
+const store = configureStore();
+
+const RNRedux = () => (
+	<Provider store={store}>
+		<App />
+	</Provider>
+);
+
+AppRegistry.registerComponent(appName, () => RNRedux);
+
+```
+</details>
 
 
 ### Install react navigation 
