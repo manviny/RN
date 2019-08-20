@@ -223,6 +223,54 @@ export default reducer
 
 </details>
 
+<details><summary>../actions/actionTypes.js</summary>
+
+
+```js
+export const DOWNLOAD_CAPSULAS = 'DOWNLOAD_CAPSULAS';
+
+export const ADD_CAPSULA = 'ADD_CAPSULA';
+```
+
+</details>
+
+<details><summary>../actions/index.js</summary>
+
+
+```js
+export { downloadCapsulas, selectCapsula, unselectCapsula } from './capsulas';
+```
+
+</details>
+
+<details><summary>../actions/capsulas.js</summary>
+
+
+```js
+import { DOWNLOAD_CAPSULAS, ADD_CAPSULA, SELECT_CAPSULA, UNSELECT_CAPSULA, UPLOAD_CAPSULA, DOWNLOAD_CAPSULA } from './actionTypes';
+
+export const downloadCapsulas = capsulas => { 
+	return {
+		type: DOWNLOAD_CAPSULAS,
+		payload: capsulas
+	};
+};
+
+export const selectCapsula = id => { 
+	return {
+		type: SELECT_CAPSULA,
+		payload: id
+	};
+};
+
+export const unselectCapsula = () => { 
+	return {
+		type: UNSELECT_CAPSULA
+	};
+};
+```
+
+</details>
 
 
 ### Install react navigation 
