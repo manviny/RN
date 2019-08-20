@@ -54,7 +54,7 @@ Una vez instalado:
 - amplify add auth
 - amplify add storage
 - amplify add api
-- amplify publish
+- amplify push
 
 
 #### [yarn](https://yarnpkg.com/en/docs/usage)
