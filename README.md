@@ -1,9 +1,9 @@
-###  Init new App
+#  Init new App
 
 - react-native init myProject
 
 
-### Run App
+# Run App
 - start Android emulator (AVD Manager)
   - in  terminal __one__: 
      - **cd .../myProject && react-native start**
@@ -24,7 +24,7 @@
 - pod install
 - abrir .xcworkspace en vez de xcodeproj
 
-## Install Amplify (+0.60)
+# Install Amplify (+0.60)
 Sin no tenemos amplify instalado:  
 
 - $ npm install -g @aws-amplify/cli
