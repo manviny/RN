@@ -15,7 +15,7 @@
 
 
 ### Si hemos descargado desde Github en vez de crear nuevo proyecto desde 0:
-- yarn 
+- yarn start
 - cd ios
 - pod install
 
@@ -23,24 +23,6 @@
 - cd ios
 - pod install
 - abrir .xcworkspace en vez de xcodeproj
-
-
-### Install Redux
-- npm install --save  redux react-redux
-- yarn add redux react-redux
-- yarn add redux-thunk
-
-
-### Install react navigation 
-- npm install --save react-navigation 
-- yarn add react-navigation 
-- yarn add react-native-gesture-handler react-native-reanimated   
-
-
-### Install react geolocation 
-- yarn add react-native-geolocation-service  
-POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
-
 
 ## Install Amplify (+0.60)
 Sin no tenemos amplify instalado:  
@@ -62,6 +44,26 @@ Start adding Amplify .
 - amplify add storage
 - amplify add api
 - amplify push
+
+
+### Install Redux
+- npm install --save  redux react-redux
+- yarn add redux react-redux
+- yarn add redux-thunk
+
+
+### Install react navigation 
+- npm install --save react-navigation 
+- yarn add react-navigation 
+- yarn add react-native-gesture-handler react-native-reanimated   
+
+
+### Install react geolocation 
+- yarn add react-native-geolocation-service  
+POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
+
+
+
 
 
 <details><summary>index.js</summary>
