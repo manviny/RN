@@ -44,6 +44,7 @@ Start adding Amplify .
 - amplify add api
 - amplify push
 
+### Example
 #### Auth
 <details><summary>index.js</summary>
   
@@ -63,7 +64,21 @@ AppRegistry.registerComponent(appName, () => App);
 ```
 </details>
 
- 
+ <details><summary>app.js</summary>
+  
+```js
+
+import { withAuthenticator } from 'aws-amplify-react-native';
+
+export default withAuthenticator(App, { 
+    includeGreetings: true ,
+    signUpConfig: {
+      hiddenDefaults: ['phone_number']
+    }
+})
+
+```
+</details>
 
 
 ### Install Redux
