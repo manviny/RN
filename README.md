@@ -2,7 +2,8 @@
 
 - react-native init myProject
 
-### Run App
+
+<details><summary>### Run App</summary>
 - start Android emulator (AVD Manager)
   - in  terminal __one__: 
      - **cd .../myProject && react-native start**
@@ -11,6 +12,7 @@
 - start on IOS Emulator
   - in  terminal __one__, run: **cd .../myProject && react-native start** if necessary
   - in terminal: **cd .../myProject && react-native run-ios --simulator="iPhone 5s"**
+</details>
 
 ### Si hemos descargado desde Github en vez de crear nuevo proyecto desde 0:
 - yarn 
