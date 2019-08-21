@@ -121,69 +121,42 @@ export default configureStore;
 ```
 </details>
 
- <details><summary>index.js</summary>
-  
-```js
-
-import { Provider } from 'react-redux';
-import configureStore from './src/store/configureStore';
-
-const store = configureStore();
-
-const RNRedux = () => (
-	<Provider store={store}>
-		<App />
-	</Provider>
-);
-
-AppRegistry.registerComponent(appName, () => RNRedux);
-
-```
-</details>
-
-
-
-<details><summary>./reducers/capsulas.js</summary>
+<details><summary>./reducers/location.js</summary>
 
 
 ```js
-import { DOWNLOAD_CAPSULAS, ADD_CAPSULA, SELECT_CAPSULA, UNSELECT_CAPSULA, UPLOAD_CAPSULA, DOWNLOAD_CAPSULA } from '../actions/actionTypes';
-
+import { SET_LOCATION } from '../actions/actionTypes';
 
 const initialState = {
-	capsulas: [],
-	selectedCapsula: null
-}
+	location: {
+		coords: {
+			speed: 0,
+			longitude: 0,
+			latitude: 0,
+			accuracy: 0,
+			heading: 0,
+			altitude: 0,
+			altitudeAccuracy: 0,
+		},
+		timestamp: 0
+	}
+};
 
 const reducer = (state = initialState, action) => {
 
 	switch (action.type) {
-
-		case DOWNLOAD_CAPSULAS:
-			console.log('DOWNLOAD_CAPSULAS desde Reducer')
+		case SET_LOCATION:	 
 			return {
 				...state,
-				capsulas: action.payload
-			}
-		case SELECT_CAPSULA:
-			console.log('SELECT_CAPSULA desde Reducer', action.payload)
-			return {
-				...state,
-				selectedCapsula: action.payload
-			}
-		case UNSELECT_CAPSULA:
-			return {
-				...state,
-				selectedCapsula: null
-			}
-		default:
+				location: action.location
+			};
+		default: 
 			return state;
-			
 	}
 
 };
 
-export default reducer
+export default reducer;
 ```
 
 </details>
@@ -192,23 +165,25 @@ export default reducer
 
 
 ```js
-export const DOWNLOAD_CAPSULAS = 'DOWNLOAD_CAPSULAS';
-
-export const ADD_CAPSULA = 'ADD_CAPSULA';
+export const SET_LOCATION = 'SET_LOCATION';
 ```
 
 </details>
+
 
 <details><summary>../actions/index.js</summary>
 
 
 ```js
-export { downloadCapsulas, selectCapsula, unselectCapsula } from './capsulas';
+export { getLocation } from './location';
 ```
 
 </details>
 
-<details><summary>../actions/capsulas.js</summary>
+
+
+
+<details><summary>../actions/location.js</summary>
 
 
 ```js
