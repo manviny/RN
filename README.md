@@ -212,6 +212,37 @@ export const unselectCapsula = () => {
 
 </details>
 
+<details><summary>HomeScreen.js</summary>
+
+
+```js
+
+
+import { getLocation } from '../store/actions';
+import { connect } from 'react-redux';
+
+
+  componentDidMount() {
+    this.props.getLocation()
+  }
+
+const mapStateToProps = state => {
+  return { 
+    userLocation: state.location,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    getLocation: () => dispatch(getLocation()),
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
+```
+
+</details>
+
+
 
 ### Install react navigation 
 - yarn add react-navigation 
