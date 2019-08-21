@@ -86,6 +86,41 @@ export default withAuthenticator(App, {
 
 ### Redux Example  
 
+
+ <details><summary>src/store/configureStore.js</summary>
+  
+```js
+
+import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+
+////////////////////////////////////////////////////////////
+/// 1.- IMPORT REDUCERS (reducers produce state)
+////////////////////////////////////////////////////////////
+
+import locationReducer from './reducers/location';
+
+
+/// 2.- ADD REDUCERS
+const rootReducer = combineReducers({
+	location: locationReducer,
+
+});
+
+let composeEnhancers = compose;
+
+if (__DEV__) {
+	composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+}
+
+const configureStore = () => {
+	return createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
+};
+export default configureStore;
+
+```
+</details>
+
  <details><summary>index.js</summary>
   
 ```js
@@ -106,77 +141,7 @@ AppRegistry.registerComponent(appName, () => RNRedux);
 ```
 </details>
 
- <details><summary>configureStore.js</summary>
-  
-```js
 
-import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-
-////////////////////////////////////////////////////////////
-/// 1.- IMPORT REDUCERS (reducers produce state)
-////////////////////////////////////////////////////////////
-
-import capsulasReducer from './reducers/capsulas';
-import locationReducer from './reducers/location';
-
-
-/// 2.- ADD REDUCERS
-const rootReducer = combineReducers({
-	capsulas: capsulasReducer,
-	location: locationReducer,
-
-});
-
-let composeEnhancers = compose;
-
-if (__DEV__) {
-	composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-}
-
-const configureStore = () => {
-	return createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
-};
-export default configureStore;
-
-```
-</details>
-
- <details><summary>src/store/configureStore.js</summary>
-  
-```js
-
-import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-
-////////////////////////////////////////////////////////////
-/// 1.- IMPORT REDUCERS (reducers produce state)
-////////////////////////////////////////////////////////////
-
-import capsulasReducer from './reducers/capsulas';
-import locationReducer from './reducers/location';
-
-
-/// 2.- ADD REDUCERS
-const rootReducer = combineReducers({
-	capsulas: capsulasReducer,
-	location: locationReducer,
-
-});
-
-let composeEnhancers = compose;
-
-if (__DEV__) {
-	composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-}
-
-const configureStore = () => {
-	return createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
-};
-export default configureStore;
-
-```
-</details>
 
 <details><summary>./reducers/capsulas.js</summary>
 
