@@ -203,7 +203,7 @@ export const getLocation = () => {
   
       } else {
       	console.log("ios")
-		getGeoocation(dispatch)       
+		getPhoneLocation(dispatch)       
       }
 
 	}; 
@@ -218,7 +218,7 @@ export const setLocation = location => { console.log("LLEGADO")
 
 
 
-export const getGeoocation = (dispatch) => {
+export const getPhoneLocation = (dispatch) => {
 
 	Geolocation.getCurrentPosition(
 		(position) => {
@@ -249,7 +249,7 @@ export async function request_location_runtime_permission_Android(dispatch) {
 		if (granted === PermissionsAndroid.RESULTS.GRANTED) {
 
 			console.log("Location Permission Granted.");
-			getGeoocation(dispatch)
+			getPhoneLocation(dispatch)
 
 		}
 		else {
