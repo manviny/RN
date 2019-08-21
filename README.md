@@ -187,27 +187,80 @@ export { getLocation } from './location';
 
 
 ```js
-import { DOWNLOAD_CAPSULAS, ADD_CAPSULA, SELECT_CAPSULA, UNSELECT_CAPSULA, UPLOAD_CAPSULA, DOWNLOAD_CAPSULA } from './actionTypes';
+import {SET_LOCATION} from './actionTypes';
 
-export const downloadCapsulas = capsulas => { 
+import { Platform, PermissionsAndroid} from 'react-native';
+import Geolocation from 'react-native-geolocation-service';
+
+
+
+export const getLocation = () => {
+	return  dispatch => {
+
+      if (Platform.OS === 'android'){
+      	console.log("Android")
+        request_location_runtime_permission_Android(dispatch);
+  
+      } else {
+      	console.log("ios")
+		getGeoocation(dispatch)       
+      }
+
+	}; 
+};
+
+export const setLocation = location => { console.log("LLEGADO")
 	return {
-		type: DOWNLOAD_CAPSULAS,
-		payload: capsulas
+		type: SET_LOCATION,
+		location: location
 	};
 };
 
-export const selectCapsula = id => { 
-	return {
-		type: SELECT_CAPSULA,
-		payload: id
-	};
-};
 
-export const unselectCapsula = () => { 
-	return {
-		type: UNSELECT_CAPSULA
-	};
-};
+
+export const getGeoocation = (dispatch) => {
+
+	Geolocation.getCurrentPosition(
+		(position) => {
+			dispatch(setLocation(position)); 
+			console.log(position);
+		},
+		(error) => {
+			console.log(error.code, error.message);
+		},
+		{ 
+			enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 
+        	// enableHighAccuracy:false,  timeOut: 20000
+        }
+        );
+
+}
+
+export async function request_location_runtime_permission_Android(dispatch) {
+
+	try {
+		const granted = await PermissionsAndroid.request(
+			PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+			{
+				'title': 'ReactNativeCode Location Permission',
+				'message': 'ReactNativeCode App needs access to your location '
+			}
+			)
+		if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+
+			console.log("Location Permission Granted.");
+			getGeoocation(dispatch)
+
+		}
+		else {
+
+			console.log("Location Permission Not Granted");
+
+		}
+	} catch (err) {
+		console.warn(err)
+	}
+}
 ```
 
 </details>
