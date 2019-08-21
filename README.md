@@ -280,7 +280,7 @@ export const unselectCapsula = () => {
 
 ### Install react geolocation 
 - yarn add react-native-geolocation-service  
-POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
+- [look howto install on IOS and Android](https://github.com/Agontuk/react-native-geolocation-service)
 
 
 <details><summary>index.js</summary>
