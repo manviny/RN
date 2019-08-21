@@ -274,7 +274,6 @@ export const unselectCapsula = () => {
 
 
 ### Install react navigation 
-- npm install --save react-navigation 
 - yarn add react-navigation 
 - yarn add react-native-gesture-handler react-native-reanimated   
 
@@ -284,10 +283,39 @@ export const unselectCapsula = () => {
 POD: pod 'react-native-geolocation', path: '../node_modules/@react-native-community/geolocation'  
 
 
-
-
-
 <details><summary>index.js</summary>
+
+
+```js
+    async requestLocationPermission() {
+      try {
+          const granted = await PermissionsAndroid.request( PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION )
+          if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+            console.log("You can use the GPS to access Location")
+            Geolocation.getCurrentPosition(
+                (position) => {
+                    console.log(position);
+                },
+                (error) => {
+                    // See error code charts below.
+                    console.log(error.code, error.message);
+                },
+                { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+            );              
+          } else {
+            console.log("Camera permission denied")
+          }
+        } catch (err) {
+          console.warn(err)
+        }
+      }
+```
+
+</details>
+
+
+
+<details><summary>BASE</summary>
 
 
 ```js
